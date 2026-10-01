@@ -1,0 +1,73 @@
+{
+  "receipt_type": "schema_validation",
+  "generated_by": "scripts/validate_schema.py",
+  "upstream": {
+    "repository": "CycloneDX/specification",
+    "revision": "55343ba19dee1785acf1ce9191540d5fd7b590db",
+    "schema_url": "https://raw.githubusercontent.com/CycloneDX/specification/55343ba19dee1785acf1ce9191540d5fd7b590db/schema/bom-1.6.schema.json",
+    "sha256": "3e92dddbc30cf7f6a02b80f0942b1a4cfd4fb1c26f1dfc4310afa9d613cafb93"
+  },
+  "derivative": {
+    "path": "data/schemas/bom-1.6.schema.json",
+    "sha256": "8ae990ffed4cb68599c883e86cdc62b381ffa15d3116839b182427c971bd1837",
+    "modification": "descriptive model examples removed; validation rules unchanged",
+    "constraint_fingerprint": "11ad2d1f261bfc5c1bd2508387b349d4ce025c0a485218a12814deb6667b67ce"
+  },
+  "vendored_references": {
+    "spdx.schema.json": "baa9d3bd1ed57b6751b0887edead6b5063ff53ff7429cf85d476c6c94af0166e",
+    "jsf-0.82.schema.json": "8bae002c25e723db7ee1f26afde680ae1a2b1a8f6b4b4b0fd65dc3becb090aae"
+  },
+  "checks": {
+    "official_source_syntax_receipt": "pass: exact pinned source replayed offline",
+    "official_source_hash_match": true,
+    "official_schema_syntax": "pass",
+    "official_fixture_validation_errors": 0,
+    "exact_official_comparison": "pass: derivative differs only at the documented $comment and modelArchitecture.description paths",
+    "local_json_schema_syntax": "pass",
+    "local_external_references": "pass",
+    "fixture": "results/latest/inventory.cbom.json",
+    "derivative_fixture_validation_errors": 0,
+    "validation_constraints_fingerprint_match": true,
+    "offline_reference_shape_cases": "valid SPDX licence and synthetic JSF shape accepted; invalid licence and missing JSF algorithm rejected"
+  },
+  "claim_ceiling": {
+    "official_source_syntax": "pass for the exact pinned source replay; source bytes retained outside the public derivative",
+    "local_fixture_validation": "pass with the derivative and vendored references",
+    "consumer_ingestion": "unverified",
+    "consumer_semantic_compatibility": "unverified",
+    "format_checking": "JSON Schema format annotations are not asserted; no format checker enabled"
+  },
+  "independent_root_replay": {
+    "runtimes": [
+      "Python 3.11.15",
+      "Python 3.12.12"
+    ],
+    "command": "python scripts/validate_schema.py --official-source <verified-pinned-source>",
+    "exit_code": 0,
+    "output": {
+      "constraint_fingerprint": {
+        "actual": "11ad2d1f261bfc5c1bd2508387b349d4ce025c0a485218a12814deb6667b67ce",
+        "expected": "11ad2d1f261bfc5c1bd2508387b349d4ce025c0a485218a12814deb6667b67ce",
+        "match": true
+      },
+      "consumer_ingestion": "unverified",
+      "errors": [],
+      "exact_official_comparison": "pass",
+      "external_references": [
+        "jsf-0.82.schema.json",
+        "spdx.schema.json"
+      ],
+      "fixture": "results/latest/inventory.cbom.json",
+      "fixture_errors": [],
+      "format_checking": "format annotations are not asserted; no format checker enabled",
+      "missing_references": [],
+      "official_fixture_errors": [],
+      "official_missing_references": [],
+      "official_schema_syntax": "pass",
+      "official_source_hash_match": true,
+      "schema_syntax": "pass",
+      "status": "pass"
+    },
+    "fixture_normalized_sha256": "44c2fc550042a9b47aefbdc308bd06cad68e69bba30c2417282dc4f23d561c27"
+  }
+}

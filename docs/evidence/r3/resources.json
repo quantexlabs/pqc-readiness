@@ -1,0 +1,81 @@
+{
+  "scope": "three whole-process local fixture runs per command",
+  "python": "3.11.15",
+  "os": "Darwin",
+  "os_release": "27.0.0",
+  "machine": "arm64",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "scripts/regenerate_results.py",
+        "--check"
+      ],
+      "repeat": 1,
+      "wall_seconds": 0.15277833300206112,
+      "peak_rss_bytes": 35766272,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/regenerate_results.py",
+        "--check"
+      ],
+      "repeat": 2,
+      "wall_seconds": 0.14750437500333646,
+      "peak_rss_bytes": 35684352,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/regenerate_results.py",
+        "--check"
+      ],
+      "repeat": 3,
+      "wall_seconds": 0.13772841700119898,
+      "peak_rss_bytes": 35815424,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pqc_readiness",
+        "pipeline",
+        "--skip-tls"
+      ],
+      "repeat": 1,
+      "wall_seconds": 0.1287542089994531,
+      "peak_rss_bytes": 35307520,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pqc_readiness",
+        "pipeline",
+        "--skip-tls"
+      ],
+      "repeat": 2,
+      "wall_seconds": 0.11433187500369968,
+      "peak_rss_bytes": 35241984,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pqc_readiness",
+        "pipeline",
+        "--skip-tls"
+      ],
+      "repeat": 3,
+      "wall_seconds": 0.12478312500024913,
+      "peak_rss_bytes": 35422208,
+      "exit_code": 0
+    }
+  ]
+}

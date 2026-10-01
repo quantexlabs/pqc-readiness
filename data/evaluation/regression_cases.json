@@ -1,0 +1,54 @@
+[
+  {
+    "id": "aes128_literal_unparsed",
+    "source": "key = b'0123456789abcdef'\nAES.new(key, AES.MODE_GCM)\n",
+    "algorithms": [
+      "AES"
+    ],
+    "size": null
+  },
+  {
+    "id": "aes256_literal_unparsed",
+    "source": "AES.new(b'0123456789abcdef0123456789abcdef', AES.MODE_GCM)\n",
+    "algorithms": [
+      "AES"
+    ],
+    "size": null
+  },
+  {
+    "id": "comment_pqc",
+    "source": "# disabled ML-KEM-768\n",
+    "algorithms": [
+      "ML-KEM"
+    ],
+    "size": null
+  },
+  {
+    "id": "rsa_alias_miss",
+    "source": "from cryptography.hazmat.primitives.asymmetric import rsa as r\nr.generate_private_key(key_size=4096)\n",
+    "algorithms": [],
+    "size": null
+  },
+  {
+    "id": "md5_only",
+    "source": "hashlib.md5(b'x')\n",
+    "algorithms": [
+      "MD5"
+    ],
+    "size": null
+  },
+  {
+    "id": "negative",
+    "source": "print('no cryptographic operation')\n",
+    "algorithms": [],
+    "size": null
+  },
+  {
+    "id": "rsa_explicit",
+    "source": "rsa.generate_private_key(key_size=4096)\n",
+    "algorithms": [
+      "RSA"
+    ],
+    "size": 4096
+  }
+]

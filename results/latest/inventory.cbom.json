@@ -1,0 +1,571 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "code-420bfc098fa763d2",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "signature"
+        },
+        "assetType": "algorithm"
+      },
+      "description": "private_key = ec.generate_private_key(ec.SECP256R1())",
+      "name": "ECDSA",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "static_pattern"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_ec_app/src/sign.py:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "private_key = ec.generate_private_key(ec.SECP256R1())"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "cfg-9b436242fdfec188",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "other"
+        },
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "unspecified"
+        }
+      },
+      "description": "ssl_protocols TLSv1.2 TLSv1.3;",
+      "name": "TLS",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "configuration_directive"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "medium"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "ssl_protocols TLSv1.2 TLSv1.3;"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "cfg-782c3136b11ac22c",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "other"
+        },
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "unspecified"
+        }
+      },
+      "description": "ssl_protocols TLSv1.2 TLSv1.3;",
+      "name": "TLS-VERSION",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "configuration_directive"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "medium"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "ssl_protocols TLSv1.2 TLSv1.3;"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "cfg-32d82a5e30e6777a",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "other"
+        },
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "unspecified"
+        }
+      },
+      "description": "ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384;",
+      "name": "TLS-CIPHER",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "configuration_directive"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:4"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384;"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "ssh-41f680b318fab345",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "signature"
+        },
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "format": "unknown",
+          "type": "public-key"
+        }
+      },
+      "description": "SSH host key algorithm ssh-rsa for host marker example.test",
+      "name": "RSA",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "parsed_marker"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "signature"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:2"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "SSH host key algorithm ssh-rsa for host marker example.test"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "ssh-d365d60cde389e35",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "parameterSetIdentifier": "256",
+          "primitive": "signature"
+        },
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "format": "unknown",
+          "type": "public-key"
+        }
+      },
+      "description": "SSH host key algorithm ecdsa-sha2-nistp256 for host marker example.test",
+      "name": "EC-P256",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "parsed_marker"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "signature"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "SSH host key algorithm ecdsa-sha2-nistp256 for host marker example.test"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "ssh-58c898391cf54fe3",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "parameterSetIdentifier": "256",
+          "primitive": "signature"
+        },
+        "assetType": "related-crypto-material",
+        "relatedCryptoMaterialProperties": {
+          "format": "unknown",
+          "type": "public-key"
+        }
+      },
+      "description": "SSH host key algorithm ssh-ed25519 for host marker secure.test",
+      "name": "Ed25519",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "parsed_marker"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "signature"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:4"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "SSH host key algorithm ssh-ed25519 for host marker secure.test"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "code-0fcfcfb4db49bb32",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "kem"
+        },
+        "assetType": "algorithm"
+      },
+      "description": "ALGORITHM = \"ML-KEM-768\"",
+      "name": "ML-KEM",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "lexical_marker"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "medium"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_pqc_app/src/kem.py:2"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "ALGORITHM = \"ML-KEM-768\""
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "code-5f8a11a396a462e1",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "signature"
+        },
+        "assetType": "algorithm"
+      },
+      "description": "SIG = \"ML-DSA-65\"",
+      "name": "ML-DSA",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "lexical_marker"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "medium"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_pqc_app/src/kem.py:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "SIG = \"ML-DSA-65\""
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "code-a5d6821a26382c6c",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "hash"
+        },
+        "assetType": "algorithm"
+      },
+      "description": "digest = hashlib.sha256(b\"test\").hexdigest()",
+      "name": "SHA-256",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "static_pattern"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "safe"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "monitor"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_rsa_app/src/hash_only.py:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "digest = hashlib.sha256(b\"test\").hexdigest()"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "code-55fd60a7adbd17a5",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "algorithm"
+      },
+      "description": "private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)",
+      "name": "RSA",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "static_pattern"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_rsa_app/src/main.py:3"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "x509-pub-3bc604c77a6da85f",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "parameterSetIdentifier": "2048",
+          "primitive": "unknown"
+        },
+        "assetType": "certificate",
+        "certificateProperties": {
+          "certificateFormat": "X.509",
+          "issuerName": "CN=pqc-readiness-test",
+          "subjectName": "CN=pqc-readiness-test"
+        }
+      },
+      "description": "Subject public key RSA size=2048",
+      "name": "RSA",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "parsed_certificate"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "unknown"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "Subject public key RSA size=2048"
+        }
+      ],
+      "type": "cryptographic-asset"
+    },
+    {
+      "bom-ref": "x509-sig-20f766f9758a53f4",
+      "cryptoProperties": {
+        "algorithmProperties": {
+          "primitive": "signature"
+        },
+        "assetType": "certificate",
+        "certificateProperties": {
+          "certificateFormat": "X.509",
+          "issuerName": "CN=pqc-readiness-test",
+          "subjectName": "CN=pqc-readiness-test"
+        }
+      },
+      "description": "Signature algorithm SHA256WITHRSAENCRYPTION",
+      "name": "SHA256WITHRSAENCRYPTION",
+      "properties": [
+        {
+          "name": "pqc-readiness:observation",
+          "value": "parsed_certificate"
+        },
+        {
+          "name": "pqc-readiness:use",
+          "value": "signature"
+        },
+        {
+          "name": "pqc-readiness:quantum_risk",
+          "value": "vulnerable"
+        },
+        {
+          "name": "pqc-readiness:migration_priority",
+          "value": "high"
+        },
+        {
+          "name": "pqc-readiness:location",
+          "value": "data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem/signature"
+        },
+        {
+          "name": "pqc-readiness:evidence",
+          "value": "Signature algorithm SHA256WITHRSAENCRYPTION"
+        }
+      ],
+      "type": "cryptographic-asset"
+    }
+  ],
+  "dependencies": [],
+  "metadata": {
+    "component": {
+      "name": "pqc-readiness-scan",
+      "type": "application"
+    },
+    "properties": [
+      {
+        "name": "scan_targets",
+        "value": "data/evaluation/corpus/proj_ec_app/src,data/evaluation/corpus/proj_mixed_config/config,data/evaluation/corpus/proj_mixed_config/ssh/known_hosts,data/evaluation/corpus/proj_pqc_app/src,data/evaluation/corpus/proj_rsa_app/src,data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem,data/evaluation/corpus"
+      },
+      {
+        "name": "finding_count",
+        "value": "13"
+      },
+      {
+        "name": "coverage",
+        "value": "{'requested_count': 1, 'requested_targets': 1, 'local_targets_scanned': 7, 'projects_scanned': 4, 'status': 'complete', 'scanned_count': 1, 'skipped_count': 0, 'failed_count': 0, 'files_scanned': 7, 'files_skipped_size': 0, 'files_truncated_cap': 0, 'findings_emitted': 13, 'findings_displayed': 13, 'actions_emitted': 12, 'actions_displayed': 12, 'findings_truncated': False, 'skipped_paths': [], 'failed_paths': []}"
+      }
+    ],
+    "timestamp": "2026-10-01T13:58:46.639111Z",
+    "tools": {
+      "components": [
+        {
+          "name": "pqc-readiness",
+          "type": "application",
+          "version": "0.1.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:216eedb6-5c0f-411f-ad6f-dff1dce0a469",
+  "specVersion": "1.6",
+  "version": 1
+}

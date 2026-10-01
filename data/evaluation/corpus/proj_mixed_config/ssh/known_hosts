@@ -1,0 +1,4 @@
+# Test fixture host keys (synthetic, not real infrastructure)
+example.test ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7fakekeydataforunittestsonlynotreal=
+example.test ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCfakeecdsa=
+secure.test ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFakeed25519keyforunittestsonly=

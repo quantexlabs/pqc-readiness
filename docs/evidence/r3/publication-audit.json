@@ -1,0 +1,11 @@
+{
+  "tracked_file_count": 110,
+  "forbidden_files": [],
+  "private_key_headers": [],
+  "private_review_links": [],
+  "history_attribution_clean": true,
+  "schema_examples_clean": true,
+  "scope": "tracked-file and available commit-message checks; not an ownership audit",
+  "archive_tracked_only": true,
+  "archive_member_count": 142
+}

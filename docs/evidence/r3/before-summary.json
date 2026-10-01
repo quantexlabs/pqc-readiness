@@ -1,0 +1,9 @@
+{
+  "baseline": "c559c457a919a7b2a08d410e520ce989d0951a00",
+  "tests": 30,
+  "failed": 26,
+  "passed": 4,
+  "errors": 0,
+  "skipped": 0,
+  "note": "new behavioral/claim-contract checks replayed against original src/docs/scripts; new case input JSON supplied"
+}

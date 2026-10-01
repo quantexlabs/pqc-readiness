@@ -1,0 +1,97 @@
+licence: Apache-2.0 (fixture corpus authored for this repository)
+provenance: >
+  Provisional repository-authored fixture labels. Independent authorship and
+  adjudication are unverified; the independent-validation stop rule remains unmet.
+  Results are fixture regression evidence only, not a held-out evaluation.
+
+items:
+  - item_key: proj_rsa_app:341902688adf16988156
+    project_id: proj_rsa_app
+    algorithm: RSA
+    source_type: code
+    evidence_line: rsa.generate_private_key in src/main.py line 3
+    human_verdict:
+
+  - item_key: proj_rsa_app:71a8e89a57039f1cc72e
+    project_id: proj_rsa_app
+    algorithm: SHA-256
+    source_type: code
+    evidence_line: hashlib.sha256 in src/hash_only.py line 3
+    human_verdict:
+
+  - item_key: proj_rsa_app:9caefd13b887c78f9165
+    project_id: proj_rsa_app
+    algorithm: RSA
+    source_type: x509
+    evidence_line: RSA public key in certs/rsa2048.pem
+    human_verdict:
+
+  - item_key: proj_rsa_app:22d2480573d4a52d8c2b
+    project_id: proj_rsa_app
+    algorithm: SHA256WITHRSAENCRYPTION
+    source_type: x509
+    evidence_line: sha256WithRSAEncryption signature in certs/rsa2048.pem
+    human_verdict:
+
+  - item_key: proj_ec_app:1114cd76df26c3fdeb55
+    project_id: proj_ec_app
+    algorithm: ECDSA
+    source_type: code
+    evidence_line: ec.generate_private_key in src/sign.py line 3
+    human_verdict:
+
+  - item_key: proj_pqc_app:b91c183721b98e8007d6
+    project_id: proj_pqc_app
+    algorithm: ML-KEM
+    source_type: code
+    evidence_line: ML-KEM-768 string in src/kem.py line 2
+    human_verdict:
+
+  - item_key: proj_pqc_app:70f7fb31f01dae083b49
+    project_id: proj_pqc_app
+    algorithm: ML-DSA
+    source_type: code
+    evidence_line: ML-DSA-65 string in src/kem.py line 3
+    human_verdict:
+
+  - item_key: proj_mixed_config:294bef9d33285af95520
+    project_id: proj_mixed_config
+    algorithm: TLS
+    source_type: config
+    evidence_line: ssl_protocols directive in config/nginx.conf line 3
+    human_verdict:
+
+  - item_key: proj_mixed_config:c2afa1dcdd73cd406cee
+    project_id: proj_mixed_config
+    algorithm: TLS-VERSION
+    source_type: config
+    evidence_line: TLSv1.2 in config/nginx.conf line 3
+    human_verdict:
+
+  - item_key: proj_mixed_config:1f89204066749c8efcb9
+    project_id: proj_mixed_config
+    algorithm: TLS-CIPHER
+    source_type: config
+    evidence_line: ssl_ciphers ECDHE-RSA and ECDHE-ECDSA in nginx.conf line 4
+    human_verdict:
+
+  - item_key: proj_mixed_config:f08710cafa9e79e048db
+    project_id: proj_mixed_config
+    algorithm: RSA
+    source_type: ssh
+    evidence_line: ssh-rsa host key line in ssh/known_hosts line 2
+    human_verdict:
+
+  - item_key: proj_mixed_config:fa0206b299c54a3941ba
+    project_id: proj_mixed_config
+    algorithm: EC-P256
+    source_type: ssh
+    evidence_line: ecdsa-sha2-nistp256 host key in ssh/known_hosts line 3
+    human_verdict:
+
+  - item_key: proj_mixed_config:e9ed30e9bb894fc8c12c
+    project_id: proj_mixed_config
+    algorithm: Ed25519
+    source_type: ssh
+    evidence_line: ssh-ed25519 host key in ssh/known_hosts line 4
+    human_verdict:

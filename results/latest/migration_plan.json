@@ -1,0 +1,96 @@
+{
+  "actions": [
+    {
+      "action": "Migrate to NIST-standardized PQC algorithms (FIPS 203/204/205)",
+      "finding_id": "cfg-32d82a5e30e6777a",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation configuration_directive; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "code-420bfc098fa763d2",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation static_pattern; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "code-55fd60a7adbd17a5",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation static_pattern; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "ssh-41f680b318fab345",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use signature; observation parsed_marker; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "ssh-58c898391cf54fe3",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use signature; observation parsed_marker; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "ssh-d365d60cde389e35",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use signature; observation parsed_marker; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "x509-pub-3bc604c77a6da85f",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation parsed_certificate; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Replace with ML-KEM (FIPS 203) for key exchange and ML-DSA (FIPS 204) for signatures",
+      "finding_id": "x509-sig-20f766f9758a53f4",
+      "priority": "high",
+      "rationale": "Quantum risk vulnerable; sensitivity unclassified; lifetime 10y; harvest exposure True; use signature; observation parsed_certificate; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2031-12-31"
+    },
+    {
+      "action": "Verify observation, parameters and operational use with the asset owner",
+      "finding_id": "cfg-782c3136b11ac22c",
+      "priority": "medium",
+      "rationale": "Quantum risk unknown; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation configuration_directive; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2035-12-31"
+    },
+    {
+      "action": "Verify observation, parameters and operational use with the asset owner",
+      "finding_id": "cfg-9b436242fdfec188",
+      "priority": "medium",
+      "rationale": "Quantum risk unknown; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation configuration_directive; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2035-12-31"
+    },
+    {
+      "action": "Verify observation, parameters and operational use with the asset owner",
+      "finding_id": "code-0fcfcfb4db49bb32",
+      "priority": "medium",
+      "rationale": "Quantum risk unknown; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation lexical_marker; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2035-12-31"
+    },
+    {
+      "action": "Verify observation, parameters and operational use with the asset owner",
+      "finding_id": "code-5f8a11a396a462e1",
+      "priority": "medium",
+      "rationale": "Quantum risk unknown; sensitivity unclassified; lifetime 10y; harvest exposure True; use unknown; observation lexical_marker; unvalidated heuristic; asset owner to verify vendor dependencies",
+      "target_milestone": "2035-12-31"
+    }
+  ],
+  "reference": "CCCS ITSM.40.001",
+  "summary": {
+    "critical": 0,
+    "high": 8,
+    "low": 0,
+    "medium": 4,
+    "monitor": 1
+  }
+}

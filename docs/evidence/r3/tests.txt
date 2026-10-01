@@ -1,0 +1,40 @@
+................................................s....................... [ 63%]
+.........................................                                [100%]
+================================ tests coverage ================================
+______________ coverage: platform darwin, python 3.11.15-final-0 _______________
+
+Name                                           Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------
+src/pqc_readiness/__init__.py                      3      0      0      0   100%
+src/pqc_readiness/__main__.py                      3      0      2      1    80%   5->exit
+src/pqc_readiness/cbom/__init__.py                 2      0      0      0   100%
+src/pqc_readiness/cbom/builder.py                 77      5     38      5    91%   19, 23, 29, 70, 122
+src/pqc_readiness/classification/__init__.py       2      0      0      0   100%
+src/pqc_readiness/classification/priority.py      94      4     64      4    95%   45, 77->80, 97, 124, 186
+src/pqc_readiness/cli.py                          69      4     16      5    89%   108, 130->138, 140, 143, 147
+src/pqc_readiness/constants.py                    12      0      0      0   100%
+src/pqc_readiness/coverage.py                     27      0      0      0   100%
+src/pqc_readiness/evaluation/__init__.py           4      0      0      0   100%
+src/pqc_readiness/evaluation/baseline.py          28      2     10      0    95%   33-34
+src/pqc_readiness/evaluation/eligibility.py       29      4     22      6    80%   20, 23, 25, 28, 29->18, 35->34
+src/pqc_readiness/evaluation/ground_truth.py      40      5     10      1    84%   43-46, 53
+src/pqc_readiness/evaluation/keys.py              11      0      4      1    93%   14->16
+src/pqc_readiness/evaluation/metrics.py           73      5     10      3    90%   75, 130-131, 134-135
+src/pqc_readiness/evaluation/runner.py            53      0     10      0   100%
+src/pqc_readiness/findings.py                     21      1      6      1    93%   21
+src/pqc_readiness/models.py                       72      3      0      0    96%   26, 30, 87
+src/pqc_readiness/paths.py                        29      0     10      0   100%
+src/pqc_readiness/pipeline.py                    133      4     42      3    96%   89-91, 117, 125->124
+src/pqc_readiness/report/__init__.py               2      0      0      0   100%
+src/pqc_readiness/report/html.py                  27      0      4      0   100%
+src/pqc_readiness/scanners/__init__.py             6      0      0      0   100%
+src/pqc_readiness/scanners/codebase.py            79      9     40      5    87%   58-59, 73, 134, 136, 140, 143-145
+src/pqc_readiness/scanners/config.py              73     14     44     10    76%   49, 53, 65, 67, 73, 83, 125, 127, 130-132, 134-136
+src/pqc_readiness/scanners/ssh.py                 46      4     12      3    88%   38, 42-43, 91
+src/pqc_readiness/scanners/tls.py                 54      3      8      1    94%   96-98, 103->exit
+src/pqc_readiness/scanners/x509.py                41      3     12      1    89%   35-37
+src/pqc_readiness/security.py                     45      2     16      1    95%   49-50
+------------------------------------------------------------------------------------------
+TOTAL                                           1155     72    380     51    91%
+Required test coverage of 90% reached. Total coverage: 91.34%
+112 passed, 1 skipped in 1.78s

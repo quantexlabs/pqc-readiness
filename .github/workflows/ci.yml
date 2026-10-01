@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: pip install -c requirements-dev.txt -e ".[dev]"
+      - name: Ruff
+        run: ruff check src tests scripts data
+      - name: Mypy
+        run: mypy src
+      - name: Pyright
+        run: pyright
+      - name: Tests
+        run: pytest --cov=pqc_readiness --cov-report=term-missing --cov-fail-under=90
+      - name: Regenerate results
+        run: python scripts/regenerate_results.py --check
+      - name: Build wheel
+        run: pip wheel . -w dist

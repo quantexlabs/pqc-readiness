@@ -1,0 +1,241 @@
+{
+  "coverage": {
+    "actions_displayed": 12,
+    "actions_emitted": 12,
+    "failed_count": 0,
+    "failed_paths": [],
+    "files_scanned": 7,
+    "files_skipped_size": 0,
+    "files_truncated_cap": 0,
+    "findings_displayed": 13,
+    "findings_emitted": 13,
+    "findings_truncated": false,
+    "local_targets_scanned": 7,
+    "projects_scanned": 4,
+    "requested_count": 1,
+    "requested_targets": 1,
+    "scanned_count": 1,
+    "skipped_count": 0,
+    "skipped_paths": [],
+    "status": "complete"
+  },
+  "errors": [],
+  "findings": [
+    {
+      "algorithm": "ECDSA",
+      "evidence": "private_key = ec.generate_private_key(ec.SECP256R1())",
+      "finding_id": "code-420bfc098fa763d2",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_ec_app/src/sign.py:3",
+      "metadata": {
+        "line": 3,
+        "observation": "static_pattern",
+        "use": "unknown"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "code"
+    },
+    {
+      "algorithm": "TLS",
+      "evidence": "ssl_protocols TLSv1.2 TLSv1.3;",
+      "finding_id": "cfg-9b436242fdfec188",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:3",
+      "metadata": {
+        "directive": "TLS",
+        "observation": "configuration_directive",
+        "use": "unknown",
+        "value": "TLSv1.2 TLSv1.3"
+      },
+      "migration_priority": "medium",
+      "quantum_risk": "unknown",
+      "source": "config"
+    },
+    {
+      "algorithm": "TLS-VERSION",
+      "evidence": "ssl_protocols TLSv1.2 TLSv1.3;",
+      "finding_id": "cfg-782c3136b11ac22c",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:3",
+      "metadata": {
+        "directive": "TLS-VERSION",
+        "observation": "configuration_directive",
+        "use": "unknown",
+        "value": "TLSv1.2"
+      },
+      "migration_priority": "medium",
+      "quantum_risk": "unknown",
+      "source": "config"
+    },
+    {
+      "algorithm": "TLS-CIPHER",
+      "evidence": "ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384;",
+      "finding_id": "cfg-32d82a5e30e6777a",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_mixed_config/config/nginx.conf:4",
+      "metadata": {
+        "directive": "TLS-CIPHER",
+        "observation": "configuration_directive",
+        "use": "unknown",
+        "value": "ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "config"
+    },
+    {
+      "algorithm": "RSA",
+      "evidence": "SSH host key algorithm ssh-rsa for host marker example.test",
+      "finding_id": "ssh-41f680b318fab345",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:2",
+      "metadata": {
+        "host": "example.test",
+        "line": 2,
+        "observation": "parsed_marker",
+        "ssh_algorithm": "ssh-rsa",
+        "use": "signature"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "ssh"
+    },
+    {
+      "algorithm": "EC-P256",
+      "evidence": "SSH host key algorithm ecdsa-sha2-nistp256 for host marker example.test",
+      "finding_id": "ssh-d365d60cde389e35",
+      "key_size": 256,
+      "location": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:3",
+      "metadata": {
+        "host": "example.test",
+        "line": 3,
+        "observation": "parsed_marker",
+        "ssh_algorithm": "ecdsa-sha2-nistp256",
+        "use": "signature"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "ssh"
+    },
+    {
+      "algorithm": "Ed25519",
+      "evidence": "SSH host key algorithm ssh-ed25519 for host marker secure.test",
+      "finding_id": "ssh-58c898391cf54fe3",
+      "key_size": 256,
+      "location": "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts:4",
+      "metadata": {
+        "host": "secure.test",
+        "line": 4,
+        "observation": "parsed_marker",
+        "ssh_algorithm": "ssh-ed25519",
+        "use": "signature"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "ssh"
+    },
+    {
+      "algorithm": "ML-KEM",
+      "evidence": "ALGORITHM = \"ML-KEM-768\"",
+      "finding_id": "code-0fcfcfb4db49bb32",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_pqc_app/src/kem.py:2",
+      "metadata": {
+        "line": 2,
+        "observation": "lexical_marker",
+        "use": "unknown"
+      },
+      "migration_priority": "medium",
+      "quantum_risk": "unknown",
+      "source": "code"
+    },
+    {
+      "algorithm": "ML-DSA",
+      "evidence": "SIG = \"ML-DSA-65\"",
+      "finding_id": "code-5f8a11a396a462e1",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_pqc_app/src/kem.py:3",
+      "metadata": {
+        "line": 3,
+        "observation": "lexical_marker",
+        "use": "unknown"
+      },
+      "migration_priority": "medium",
+      "quantum_risk": "unknown",
+      "source": "code"
+    },
+    {
+      "algorithm": "SHA-256",
+      "evidence": "digest = hashlib.sha256(b\"test\").hexdigest()",
+      "finding_id": "code-a5d6821a26382c6c",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_rsa_app/src/hash_only.py:3",
+      "metadata": {
+        "line": 3,
+        "observation": "static_pattern",
+        "use": "unknown"
+      },
+      "migration_priority": "monitor",
+      "quantum_risk": "safe",
+      "source": "code"
+    },
+    {
+      "algorithm": "RSA",
+      "evidence": "private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)",
+      "finding_id": "code-55fd60a7adbd17a5",
+      "key_size": 2048,
+      "location": "data/evaluation/corpus/proj_rsa_app/src/main.py:3",
+      "metadata": {
+        "line": 3,
+        "observation": "static_pattern",
+        "use": "unknown"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "code"
+    },
+    {
+      "algorithm": "RSA",
+      "evidence": "Subject public key RSA size=2048",
+      "finding_id": "x509-pub-3bc604c77a6da85f",
+      "key_size": 2048,
+      "location": "data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem",
+      "metadata": {
+        "issuer": "CN=pqc-readiness-test",
+        "observation": "parsed_certificate",
+        "subject": "CN=pqc-readiness-test",
+        "use": "unknown"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "x509"
+    },
+    {
+      "algorithm": "SHA256WITHRSAENCRYPTION",
+      "evidence": "Signature algorithm SHA256WITHRSAENCRYPTION",
+      "finding_id": "x509-sig-20f766f9758a53f4",
+      "key_size": null,
+      "location": "data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem/signature",
+      "metadata": {
+        "issuer": "CN=pqc-readiness-test",
+        "observation": "parsed_certificate",
+        "subject": "CN=pqc-readiness-test",
+        "use": "signature"
+      },
+      "migration_priority": "high",
+      "quantum_risk": "vulnerable",
+      "source": "x509"
+    }
+  ],
+  "scan_targets": [
+    "data/evaluation/corpus/proj_ec_app/src",
+    "data/evaluation/corpus/proj_mixed_config/config",
+    "data/evaluation/corpus/proj_mixed_config/ssh/known_hosts",
+    "data/evaluation/corpus/proj_pqc_app/src",
+    "data/evaluation/corpus/proj_rsa_app/src",
+    "data/evaluation/corpus/proj_rsa_app/certs/rsa2048.pem",
+    "data/evaluation/corpus"
+  ],
+  "warnings": []
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "clean default clone of publication bundle; existing local dependency environment; offline wheel build",
+  "initially_clean": true,
+  "tested_code_sha256": "002b9c865bd066b8af72ebf467f5c986b4be6d19155b31932ec097fdeedb25be",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "scripts/regenerate_results.py"
+      ],
+      "exit_code": 0,
+      "output": "Regenerated 8 fixture artifacts\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/regenerate_results.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Artifact check passed\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "--cov=pqc_readiness",
+        "--cov-report=term-missing",
+        "--cov-fail-under=90"
+      ],
+      "exit_code": 0,
+      "output": "................................................s....................... [ 63%]\n.........................................                                [100%]\n================================ tests coverage ================================\n______________ coverage: platform darwin, python 3.11.15-final-0 _______________\n\nName                                           Stmts   Miss Branch BrPart  Cover   Missing\n------------------------------------------------------------------------------------------\nsrc/pqc_readiness/__init__.py                      3      0      0      0   100%\nsrc/pqc_readiness/__main__.py                      3      0      2      1    80%   5->exit\nsrc/pqc_readiness/cbom/__init__.py                 2      0      0      0   100%\nsrc/pqc_readiness/cbom/builder.py                 77      5     38      5    91%   19, 23, 29, 70, 122\nsrc/pqc_readiness/classification/__init__.py       2      0      0      0   100%\nsrc/pqc_readiness/classification/priority.py      94      4     64      4    95%   45, 77->80, 97, 124, 186\nsrc/pqc_readiness/cli.py                          69      4     16      5    89%   108, 130->138, 140, 143, 147\nsrc/pqc_readiness/constants.py                    12      0      0      0   100%\nsrc/pqc_readiness/coverage.py                     27      0      0      0   100%\nsrc/pqc_readiness/evaluation/__init__.py           4      0      0      0   100%\nsrc/pqc_readiness/evaluation/baseline.py          28      2     10      0    95%   33-34\nsrc/pqc_readiness/evaluation/eligibility.py       29      4     22      6    80%   20, 23, 25, 28, 29->18, 35->34\nsrc/pqc_readiness/evaluation/ground_truth.py      40      5     10      1    84%   43-46, 53\nsrc/pqc_readiness/evaluation/keys.py              11      0      4      1    93%   14->16\nsrc/pqc_readiness/evaluation/metrics.py           73      5     10      3    90%   75, 130-131, 134-135\nsrc/pqc_readiness/evaluation/runner.py            53      0     10      0   100%\nsrc/pqc_readiness/findings.py                     21      1      6      1    93%   21\nsrc/pqc_readiness/models.py                       72      3      0      0    96%   26, 30, 87\nsrc/pqc_readiness/paths.py                        29      0     10      0   100%\nsrc/pqc_readiness/pipeline.py                    133      4     42      3    96%   89-91, 117, 125->124\nsrc/pqc_readiness/report/__init__.py               2      0      0      0   100%\nsrc/pqc_readiness/report/html.py                  27      0      4      0   100%\nsrc/pqc_readiness/scanners/__init__.py             6      0      0      0   100%\nsrc/pqc_readiness/scanners/codebase.py            79      9     40      5    87%   58-59, 73, 134, 136, 140, 143-145\nsrc/pqc_readiness/scanners/config.py              73     14     44     10    76%   49, 53, 65, 67, 73, 83, 125, 127, 130-132, 134-136\nsrc/pqc_readiness/scanners/ssh.py                 46      4     12      3    88%   38, 42-43, 91\nsrc/pqc_readiness/scanners/tls.py                 54      3      8      1    94%   96-98, 103->exit\nsrc/pqc_readiness/scanners/x509.py                41      3     12      1    89%   35-37\nsrc/pqc_readiness/security.py                     45      2     16      1    95%   49-50\n------------------------------------------------------------------------------------------\nTOTAL                                           1155     72    380     51    91%\nRequired test coverage of 90% reached. Total coverage: 91.34%\n112 passed, 1 skipped in 1.36s\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts",
+        "data"
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy",
+        "src"
+      ],
+      "exit_code": 0,
+      "output": "Success: no issues found in 29 source files\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pyright",
+        "--pythonpath",
+        "python"
+      ],
+      "exit_code": 0,
+      "output": "0 errors, 0 warnings, 0 informations\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "wheel",
+        ".",
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-cache-dir",
+        "--disable-pip-version-check",
+        "-w",
+        "<temporary-wheel-output>"
+      ],
+      "exit_code": 0,
+      "output": "Processing ./.\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: pqc-readiness\n  Building wheel for pqc-readiness (pyproject.toml): started\n  Building wheel for pqc-readiness (pyproject.toml): finished with status 'done'\n  Created wheel for pqc-readiness: filename=pqc_readiness-0.1.0-py3-none-any.whl size=42393 sha256=a40c528e7399e608020f519aa2bea5bccd70ad7d757689eb698c0216c515c4f5\n  Stored in directory: <temporary-path>\nSuccessfully built pqc-readiness\n"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_publication.py"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"tracked_file_count\": 110,\n  \"forbidden_files\": [],\n  \"private_key_headers\": [],\n  \"private_review_links\": [],\n  \"history_attribution_clean\": true,\n  \"schema_examples_clean\": true,\n  \"scope\": \"tracked-file and available commit-message checks; not an ownership audit\"\n}\n"
+    }
+  ],
+  "post_regeneration_changes": [
+    "results/latest/inventory.cbom.json",
+    "results/latest/report.html"
+  ],
+  "normalized_artifact_check": "pass",
+  "source_environment_reused": true
+}

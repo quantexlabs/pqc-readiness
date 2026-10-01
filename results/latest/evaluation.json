@@ -1,0 +1,63 @@
+{
+  "f1": {
+    "lower": 1.0,
+    "n_bootstrap": 1000,
+    "point": 1.0,
+    "upper": 1.0
+  },
+  "licence": "Apache-2.0 (fixture corpus authored for this repository)",
+  "metric_scope": "algorithm_presence_by_location",
+  "n_bootstrap": 1000,
+  "per_project": {
+    "proj_ec_app": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 1,
+      "tp": 1
+    },
+    "proj_mixed_config": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 6,
+      "tp": 6
+    },
+    "proj_pqc_app": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 2,
+      "tp": 2
+    },
+    "proj_rsa_app": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 4,
+      "tp": 4
+    }
+  },
+  "precision": {
+    "lower": 1.0,
+    "n_bootstrap": 1000,
+    "point": 1.0,
+    "upper": 1.0
+  },
+  "provenance": "Provisional repository-authored fixture labels. Independent authorship and adjudication are unverified; the independent-validation stop rule remains unmet. Results are fixture regression evidence only, not a held-out evaluation.\n",
+  "recall": {
+    "lower": 1.0,
+    "n_bootstrap": 1000,
+    "point": 1.0,
+    "upper": 1.0
+  },
+  "seed": 42
+}
