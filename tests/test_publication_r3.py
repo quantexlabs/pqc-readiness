@@ -139,17 +139,26 @@ def test_r10_display_limits() -> None:
     [
         (6, "docs/PREREGISTRATION.md", "Retrospective"),
         (7, "data/schemas/PROVENANCE.md", "Local modification"),
-        (8, "REPORT.md", "PUBLICATION_FIX_REPORT_R4_2026-10-01.md"),
         (11, "scripts/regenerate_results.py", "--check"),
-        (12, "README.md", "four local artifact classes"),
+        (12, "README.md", "four small fixture projects"),
         (13, "data/DATA_MANIFEST.md", "results/latest"),
-        (15, "README.md", "Independent validation remains blocked"),
+        (15, "README.md", "is not independently validated"),
     ],
 )
 def test_release_claim_contract(finding: int, path: str, required: str) -> None:
     target = ROOT / path
     assert target.exists(), f"finding {finding}: missing {path}"
     assert required in target.read_text(), f"finding {finding}: missing {required}"
+
+
+def test_release_claim_contract_finding_8_deleted_milestone_report() -> None:
+    deleted_name = "PUBLICATION_FIX_REPORT_R4_2026-10-01.md"
+    deleted_path = ROOT / "docs/milestones" / deleted_name
+    assert not deleted_path.is_file(), "finding 8: deleted milestone report must stay absent"
+    for md_path in ROOT.rglob("*.md"):
+        assert deleted_name not in md_path.read_text(), (
+            f"finding 8: {md_path.relative_to(ROOT)} must not link to or name {deleted_name}"
+        )
 
 
 @pytest.mark.parametrize(

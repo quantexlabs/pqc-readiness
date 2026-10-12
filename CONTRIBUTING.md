@@ -5,7 +5,7 @@
 3. Run `pytest --cov=pqc_readiness --cov-report=term-missing --cov-fail-under=90`.
 4. Run `python scripts/regenerate_results.py --check` before rewriting artifacts.
 5. Regenerate with `python scripts/regenerate_results.py`; it also updates integrity hashes.
-6. Keep private reviews, environments, local coordinates and credentials outside publication refs.
+6. Do not commit credentials, private keys or local file paths.
 
 Current labels are authored fixtures. Independent adjudication is required before
 external-validation claims. Use `data/evaluation/adjudication_sheet.csv` for human review.

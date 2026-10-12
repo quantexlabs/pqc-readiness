@@ -1,2 +1,0 @@
-Superseded replay receipt. The original is retained privately; its exact earlier test
-version is not pinned. Its count is not independently replayable publication evidence.

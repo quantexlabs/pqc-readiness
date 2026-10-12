@@ -1,5 +1,5 @@
 {
-  "data/DATA_MANIFEST.md": "dd61532410888d19d4c4cdeede3e2d744e2aba082d716aa9bc2cbf5779d11994",
+  "data/DATA_MANIFEST.md": "a3226b4a5ed17deb75147c5cb4f3baa949fef1cb7f79af37183e902a3277583c",
   "data/evaluation/adjudication_sheet.csv": "4b70da6de238655e8b832bfedeca6ba1e7b7ab94aa51152d3c2ed3436e7c1594",
   "data/evaluation/corpus/proj_ec_app/src/sign.py": "f66368d8c9d8be7894af32e041a3abdce211a338eda6b5d9c3f92848d34a5277",
   "data/evaluation/corpus/proj_mixed_config/config/nginx.conf": "3e2f9b8751bcd468aaea1407d2a2819cc8a7b2f57ef4598dd09bbcffb290c195",
@@ -22,7 +22,7 @@
   "results/evaluation/results.json": "896099b382c6fb17c90d7c2f1b38b5b8861a886da33941b35919c32a664b55ae",
   "results/latest/evaluation.json": "462c4f79bb901fe6fba4f6143a0292ad372704102f5cfae822ed8e9c8794d129",
   "results/latest/findings.json": "2b5e5fe21f550d870ed849bb954a5af260669ee52ac1a272faa45a70925fa77f",
-  "results/latest/inventory.cbom.json": "f8d0712a0a002fc56d295565a5fdc7396e863e6dec2e844fae8c0486e32b3213",
+  "results/latest/inventory.cbom.json": "57d6467cea31c00c5444b1301166ef639f1117aaa825eac74281fb785f314625",
   "results/latest/migration_plan.json": "4ce9be28cdaae06fbacf5c48201f555384c0858f7899849a4d0af263e152bf51",
-  "results/latest/report.html": "9c91240cb25557f80ad1eef4a2369e99a39757b6958a5b78f26b15a3439c1a17"
+  "results/latest/report.html": "8f4257e7b9eabaa26c0b9e9982e012b66e70935b5a399e2f9d1aed097532290b"
 }

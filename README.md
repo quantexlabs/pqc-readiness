@@ -1,17 +1,6 @@
 # pqc-readiness
 
-A QuanteX Labs Python integration prototype for reviewing cryptographic observations.
-Limited engineering work sample: this fixture-based engineering work sample shows local integration.
-The fixture demo covers four local artifact classes: code, configuration, SSH markers,
-and X.509 certificates. TLS is a separately mocked capability; live success is unverified.
-No independently reviewed real-world case study is included. This work sample demonstrates
-local engineering, not firm client delivery, official compliance, independently validated
-readiness, or research novelty.
-
-Independent validation remains blocked: labels lack independent adjudication, no held-out
-corpus has been assessed, policy scenarios lack domain review, and independent CBOM
-consumer ingestion has not been demonstrated. Results are provisional fixture regression
-agreement. Four-project bootstrap intervals describe resampling those fixtures only.
+A QuanteX Labs Inc. research prototype for reviewing cryptographic observations. It runs on four small fixture projects that we wrote: code, configuration, SSH markers and X.509 certificates. TLS scanning is mocked in tests, so live TLS results are not verified. There is no real-world case study. The prototype has no clients, does not show compliance with any standard and is not independently validated. We do not claim research novelty.
 
 ## Example
 
@@ -27,16 +16,13 @@ python scripts/regenerate_results.py --check
 
 One command regenerates evaluation JSON, the figure, inventory JSON/CBOM, migration
 plan, and [sample HTML report](results/latest/report.html). See [results](RESULTS.md),
-[data and licences](data/DATA_MANIFEST.md), and the
-[release evidence index](docs/index.md).
+[data and licences](data/DATA_MANIFEST.md), and [documentation](docs/index.md).
 An asset owner can inspect observation status and assumptions, verify operational use
 with the vendor, and revise the sensitivity/lifetime defaults before using the plan.
 
-## Release evidence
+## Checks
 
-The [release table](docs/index.md#release-evidence) records fresh-checkout tests,
-regeneration and schema syntax checks. The companion delivery receipt identifies the
-exact candidate ref and bundle digest. These are local verification results.
+CI is set up to run the tests, type checks, the schema check and the regeneration check on Python 3.11 and 3.12. These are software checks. They do not validate the method.
 
 ## Asset-owner workflow
 

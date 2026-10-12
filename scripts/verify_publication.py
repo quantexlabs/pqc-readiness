@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Audit an explicit publication ref, including every reachable tree and commit.
 
-Quoted logs and test fixtures have no exemption. The requested human commit identity
-is authorized metadata; copyright and licence notices remain in shipped content.
+The commit author and committer must match the project identity below.
 This bounded pattern scan is neither a proof of secret absence nor an ownership audit.
 """
 
@@ -126,7 +125,7 @@ def audit(ref: str) -> dict[str, object]:
         "metadata_violations": metadata_violations,
         "secret_findings": secret_findings,
         "secret_rules": list(SECRET_RULES),
-        "identity_policy": "requested human author/committer; no anonymous-metadata claim",
+        "identity_policy": "project author identity required",
         "scope": (
             "all reachable commit trees, names, author/committer metadata and messages for this ref"
         ),

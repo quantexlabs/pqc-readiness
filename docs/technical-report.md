@@ -1,9 +1,6 @@
 # Technical report: pqc-readiness
 
-This integration prototype is a Limited engineering work sample. It aggregates
-observations from four local artifact classes, with a separately mocked TLS scanner,
-into JSON, a CycloneDX-style CBOM, and an HTML verification plan. It demonstrates
-fixture engineering only. See [README](../README.md)
+This integration prototype aggregates observations from four local artifact classes, with a separately mocked TLS scanner, into JSON, a CycloneDX-style CBOM and an HTML verification plan. See [README](../README.md)
 for policy assumptions, scope limits and related-work links, and [RESULTS](../RESULTS.md)
 for regenerated provisional macro metrics.
 
@@ -25,7 +22,7 @@ negative cases are separately tested, including an explicitly documented alias m
 
 The contribution is a lightweight integration of observations and selected federal
 milestone dates. Prior tools already supply detection, export, visualization and policy
-checks. Global novelty, buyer-demand trends and competitive performance are unverified.
+checks. We have not checked global novelty, market demand or performance against other tools.
 No client-performance claim is supported. No client data is bundled.
 
 Immutable capability references for CBOMkit and Sonar Cryptography are listed in

@@ -22,12 +22,7 @@ They are repository-authored tests, not a new independently labelled held-out co
 
 ## Stop rules and disposition
 
-Independent-validation stop rule: **UNMET**. Independent authorship, adjudication,
-held-out evaluation and domain policy review remain unverified. Stop readiness and
-independent-benchmark claims. Continue only engineering regressions and provisional
-fixture scoring. Do not backdate registration or fill reviewer identities without receipts.
-Recall below 0.50 would stop fixture accuracy claims. Memory over 12 GB on a measured
-slice would trigger redesign; current resource receipts cover only tiny local fixtures.
+Independent-validation stop rule: **UNMET**. Independent authorship, adjudication, held-out evaluation and policy review are not done. While this rule is unmet, we make no readiness claim and no benchmark claim. Recall below 0.50 would stop fixture accuracy claims. Memory over 12 GB on a measured slice would trigger a redesign. Current resource records cover only tiny local fixtures.
 
 ```bash
 python scripts/regenerate_results.py

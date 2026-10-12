@@ -1,7 +1,0 @@
-{
-  "python": "3.11.15",
-  "os": "Darwin",
-  "os_release": "27.0.0",
-  "machine": "arm64",
-  "scope": "local available dependency environment; no fresh network installation or CI execution claimed"
-}

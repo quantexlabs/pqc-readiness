@@ -46,11 +46,10 @@ on the tested Python 3.11 and 3.12 runtimes. Regeneration also refreshes data/CH
 ## Separate resource receipts
 
 `python scripts/measure_resources.py` records three whole-command wall-time/peak-RSS runs
-per command using os.wait4, including interpreter startup. Sanitized environment and
-measurements are retained in docs/evidence/r3/resources.json. These are tiny local runs,
+per command using os.wait4, including interpreter startup. Those measurements were internal
+records and are not included in this repository. These are tiny local runs,
 not a hardware guarantee, scale benchmark, or a measured validation of policy assumptions.
-Those historical receipts used the earlier local environment. The R4 clean-checkout
-matrix uses requirements-dev.txt; Python 3.12 dependencies were installed from the local
+The test matrix uses requirements-dev.txt; Python 3.12 dependencies were installed from the local
 package cache. Fresh network acquisition was unavailable.
 
 ## Limits

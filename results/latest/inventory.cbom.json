@@ -554,7 +554,7 @@
         "value": "{'requested_count': 1, 'requested_targets': 1, 'local_targets_scanned': 7, 'projects_scanned': 4, 'status': 'complete', 'scanned_count': 1, 'skipped_count': 0, 'failed_count': 0, 'files_scanned': 7, 'files_skipped_size': 0, 'files_truncated_cap': 0, 'findings_emitted': 13, 'findings_displayed': 13, 'actions_emitted': 12, 'actions_displayed': 12, 'findings_truncated': False, 'skipped_paths': [], 'failed_paths': []}"
       }
     ],
-    "timestamp": "2026-10-01T13:58:46.639111Z",
+    "timestamp": "2026-10-12T20:33:39.967279Z",
     "tools": {
       "components": [
         {
@@ -565,7 +565,7 @@
       ]
     }
   },
-  "serialNumber": "urn:uuid:216eedb6-5c0f-411f-ad6f-dff1dce0a469",
+  "serialNumber": "urn:uuid:6b70d75b-173f-4324-8119-970839fbf6ea",
   "specVersion": "1.6",
   "version": 1
 }

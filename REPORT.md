@@ -1,6 +1,3 @@
-# Validation record
+# Test record
 
-Current self-contained evidence:
-[round 4 fix report](docs/milestones/PUBLICATION_FIX_REPORT_R4_2026-10-01.md).
-The release evidence index links the local tests, runtime, artifact-check, and schema
-receipts. Local tests do not establish independent validation.
+CI is set up to run the tests, type checks, the schema check and the regeneration check on Python 3.11 and 3.12. These checks test the software. They do not validate the method.

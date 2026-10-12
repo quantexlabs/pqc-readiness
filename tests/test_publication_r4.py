@@ -27,9 +27,9 @@ EMAIL = "52765136+Daneshpajouh@users.noreply.github.com"
 
 def test_finding_1_work_sample_ceiling() -> None:
     text = (ROOT / "README.md").read_text()
-    assert "Limited engineering work sample" in text
-    assert "No independently reviewed real-world case study" in text
-    assert "Independent validation remains blocked" in text
+    assert "research prototype" in text
+    assert "There is no real-world case study" in text
+    assert "is not independently validated" in text
 
 
 def test_finding_2_stable_aggregation_and_constraints() -> None:
@@ -103,7 +103,6 @@ def test_finding_5_public_text_hygiene() -> None:
     targets = [
         ROOT / "tests/test_publication_fixes.py",
         ROOT / "tests/test_publication_r3.py",
-        *sorted((ROOT / "docs/evidence/r3").glob("*.txt")),
     ]
     home = "/" + "Users" + "/"
     private = "." + "review/"
@@ -127,8 +126,6 @@ def test_finding_6_pinned_schema_lineage() -> None:
 def test_finding_7_units_and_replay_ceiling() -> None:
     assert "10 MiB" in (ROOT / "README.md").read_text()
     assert "eagerly enumerates" in (ROOT / "README.md").read_text()
-    report = (ROOT / "docs/milestones/PUBLICATION_FIX_REPORT_R3_2026-10-01.md").read_text()
-    assert "initial 16" not in report
     results = (ROOT / "RESULTS.md").read_text()
     assert "Macro metrics" in results and "pooled counts" in results
     assert "not generalization" in results
@@ -261,8 +258,9 @@ def test_finding_11_traceable_owner_workflow() -> None:
     assert "Cryptographic observations" in report
     assert "Observation to verification" in report
     assert "Asset-owner workflow" in report
-    assert "fixture-based engineering work sample" in (ROOT / "README.md").read_text()
-    assert "Release evidence" in (ROOT / "README.md").read_text()
+    readme = (ROOT / "README.md").read_text()
+    assert "four small fixture projects" in readme
+    assert "## Checks" in readme
 
 
 def test_workflow_uses_actual_policy_inputs() -> None:

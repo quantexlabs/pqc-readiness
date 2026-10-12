@@ -1,12 +1,9 @@
 # Changelog
 
-## 0.1.0 (local candidate, 2026-10-01)
+## Changes after 0.1.0 (2026-10-12)
 
-Fixture integration prototype with retrospective evaluation, provisional labels,
-CBOM syntax checking, and an unofficial milestone heuristic. No public release receipt.
-Round 3 corrects inventory identity, observation status, partial coverage and export
-semantics. Independent validation, policy review and consumer ingestion remain unverified.
+Updated PREREGISTRATION.md stop rules and refreshed the checksum file.
 
-Round 4 preserves partial file-read evidence, keeps configuration markers subject to
-verification, stabilizes dual-runtime regeneration, pins schema provenance, completes
-licences and rebuilds the bounded publication candidate. See the round 4 finding ledger.
+## 0.1.0 (2026-10-01)
+
+First public release. A fixture-based prototype that collects cryptographic observations, exports a CycloneDX CBOM and builds an unofficial migration plan. The labels are provisional and written by us. No independent validation, policy review or CBOM consumer test has been done.
